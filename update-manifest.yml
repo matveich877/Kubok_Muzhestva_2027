@@ -1,0 +1,38 @@
+name: Update Photo Manifest
+
+on:
+  push:
+    paths:
+      - 'media/photos/**'
+      - '.github/workflows/update-manifest.yml'
+  workflow_dispatch:
+
+jobs:
+  update-manifest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate photo manifest
+        run: |
+          python3 << 'EOF'
+          import os, json
+          photos_dir = 'media/photos'
+          manifest = []
+          if os.path.exists(photos_dir):
+            for f in sorted(os.listdir(photos_dir)):
+              if f.lower().endswith(('.jpg', '.jpeg', '.png', '.webp', '.gif')):
+                manifest.append(f)
+          with open(os.path.join(photos_dir, 'manifest.json'), 'w', encoding='utf-8') as f:
+            json.dump(manifest, f, ensure_ascii=False, indent=2)
+          print(f"Generated manifest with {len(manifest)} photos")
+          EOF
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add media/photos/manifest.json
+          git diff --cached --quiet || (git commit -m "🔄 Auto-update photo manifest" && git push)
