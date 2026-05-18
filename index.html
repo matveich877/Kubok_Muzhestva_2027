@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Кубок Мужества 2026 — Итоги и партнёрство</title>
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=8CkLE273jCUcw9G3R7tpkRr5R2iQ3KLqjRioff0mMjKldXrVtWuq7mPuRxJ8qIg0yppdepPt9Awk-RzlfKw3EtfOY3UiByzthXR4ngvGRI2RkDzq85im8X3bh0H8aJP6cLdqBfceaa_v387IsHrXyDI6YoBiyXxi0977ac85o74g_tz4_bI7-8QGblKVjOoV-5tNiRu2JPvp4o2TrzXHn47Hcsoz49sn8Tw4uwDhZyf42g8z_W9HU3Ra6i4oCpulpbZ8fER4Qx7W9MzQD6YVz55sAZsiBS-xNIP1fpwC2WdyYRZU_fmkosA5uqWF1QIx4lCR3Z85TeIQzxlHu2vXWWxftSCekU9vh8-6GOMnIoMUyr_yjKehuAs25OsaPZhpKvgCyMqRUBLt8ZNnAELOCM3vq982mIX46m1ts5K5iXXRSotK7sryP56X52DuvlobZgbLplPjeWAWqHDFCQBlwcUGf7eNdjzrYPr4DWtxANj8FnfzauxbND418n6yssiGVZKSh8jr7dYuh8eCTYmY_yhuoHhXYza7f4LKmvUe-7d8T2Oxo1psWCieTd-eeTG8TkwvHpjxMyV6HCQHwi269ALRtciZfM0_-YTH7eDFVS58UdGm-3IHMHc-hI2N_1Pfn8-2tthyHTEOZRYIdotIeg" charset="UTF-8"></script><style>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=bBpDoLT0LJYfFDejY34qpx0hlU7oi2pZt7EVDPgG5O6Sqw9TgBVJWcpfySycEqR2ZEMgZYJG8UhEz5DvuI0RYr_Sb3hXaHePZyOeH39S_xs_E_YPjajp8mkCbUMGcWCEUFyLaReEbUbPeAKf2tOc9qXabumpYGuIPyvP2_uBaFCvzdB461F8uYgfyMU8P-IHMXvJ1egpfg-EfY5fHDhP0y0yjOrMReZhl_4uZk25dyyysIPXSGbKBtfn9xE6tiPMxDQLcNX8JKB0sZQ579vOcRDOOYj4kgGwzBbVOchLv992M4_nIpWGvD-kPMVrqWAGbaUCAmzbV-OHwnI3W_Na3_ZdJrtYCQrEVLzteiOMNVYAF-8M0bM9tg6yQa471x73x7iA7Msz5zUAaCmnmy8CO-RNHMsotqGLUgqH8EYc0QELhtef7tvsKlzV9AK4fKhwtbvei1m0rCpYwzJ0YFrgIyZPgRFu1UX5MuWr_oYBC5kyOn0kJyHNatr0OvLk4OwuC6YaN0YHIP8XA8ved-LSHylwavXj0ZH2xTkn2I67rJnIMrlzm1YMSl6wmEMYzj57ZG9qil-8xyBpy171NDfwdFmcNUwf46kAAk9lP4XJyCcWbjH8yaJtzbILz_mlMerDmhpwOmRvATaVmJZA3t1ARg" charset="UTF-8"></script><style>
 :root {
   --primary: #6b0f1a;
   --red: #c41e3a;
@@ -696,6 +696,46 @@ body {
   margin-top: 4px;
 }
 
+
+/* ===== PARTNER LINKS ===== */
+a.partner-card {
+  text-decoration: none;
+  color: var(--primary);
+  position: relative;
+}
+a.partner-card::after {
+  content: '↗';
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: var(--gold);
+}
+a.partner-card:hover::after { opacity: 1; }
+
+/* ===== VK PLAYLIST ===== */
+.vk-playlist {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  color: var(--white);
+  margin-top: 30px;
+  box-shadow: var(--shadow);
+}
+.vk-playlist-icon { font-size: 2.5rem; margin-bottom: 10px; }
+.vk-playlist h4 { font-size: 1.2rem; margin-bottom: 8px; color: var(--gold); }
+.vk-playlist p { opacity: 0.85; margin-bottom: 15px; font-size: 0.95rem; }
+.vk-playlist .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gold);
+  color: var(--dark);
+}
+
 </style>
 </head>
 <body>
@@ -893,6 +933,16 @@ body {
       </div>
     </a>
 
+  <!-- VK PLAYLIST -->
+  <div class="vk-playlist fade-in">
+    <div class="vk-playlist-icon">📺</div>
+    <h4>Онлайн-трансляции прошлого турнира</h4>
+    <p>Все поединки «Кубка Мужества 2026» в записи. Прямые эфиры с трёх татами.</p>
+    <!-- ЗАМЕНИ: вставь ссылку на плейлист VK в href -->
+    <a href="https://vk.com/video/playlist/..." target="_blank" class="btn btn-gold">
+      Смотреть плейлист трансляций VK ↗
+    </a>
+  </div>
 </section>
 
 <!-- NEXT YEAR -->
@@ -982,24 +1032,28 @@ body {
     <h2>Наши партнёры в 2026</h2>
     <div class="line"></div>
     <p>Компании и организации, которые поддержали «Кубок Мужества»</p>
+    <p style="max-width:600px; margin:15px auto 0; color:#777; font-size:0.95rem;">
+      👆 <strong>Нажмите на карточку</strong>, чтобы перейти на официальный сайт или страницу партнёра
+    </p>
   </div>
   <div class="fade-in" style="background:var(--white); border-radius:20px; padding:30px; box-shadow:var(--shadow); margin-bottom:30px;">
     <img src="media/banners/sponsors_2026.png" alt="Баннер партнёров Кубок Мужества 2026" style="width:100%; border-radius:12px; display:block;">
   </div>
   <div class="partners-grid fade-in">
-    <div class="partner-card">Федерация каратэ России</div>
-    <div class="partner-card">Минспорт Кузбасса</div>
-    <div class="partner-card">ФК Кемеровской области</div>
-    <div class="partner-card">ФКН Новокузнецк</div>
-    <div class="partner-card">Best Sport</div>
-    <div class="partner-card">DINAMICA</div>
-    <div class="partner-card">ЗИОН</div>
-    <div class="partner-card">Родная Земля</div>
-    <div class="partner-card">Аптекарский двор</div>
-    <div class="partner-card">Клячка</div>
-    <div class="partner-card">Сервис Фарм</div>
-    <div class="partner-card">Партнёр центр</div>
-    <div class="partner-card">ЧОП ГРАД</div>
+    <!-- ЗАМЕНИ: вставь реальные ссылки на сайты партнёров в href -->
+    <a href="#" target="_blank" class="partner-card">Федерация каратэ России</a>
+    <a href="#" target="_blank" class="partner-card">Минспорт Кузбасса</a>
+    <a href="#" target="_blank" class="partner-card">ФК Кемеровской области</a>
+    <a href="#" target="_blank" class="partner-card">ФКН Новокузнецк</a>
+    <a href="#" target="_blank" class="partner-card">Best Sport</a>
+    <a href="#" target="_blank" class="partner-card">DINAMICA</a>
+    <a href="#" target="_blank" class="partner-card">ЗИОН</a>
+    <a href="#" target="_blank" class="partner-card">Родная Земля</a>
+    <a href="#" target="_blank" class="partner-card">Аптекарский двор</a>
+    <a href="#" target="_blank" class="partner-card">Клячка</a>
+    <a href="#" target="_blank" class="partner-card">Сервис Фарм</a>
+    <a href="#" target="_blank" class="partner-card">Партнёр центр</a>
+    <a href="#" target="_blank" class="partner-card">ЧОП ГРАД</a>
   </div>
 </section>
 
