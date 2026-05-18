@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#6b0f1a">
 <title>Кубок Мужества 2026 — Итоги и партнёрство</title>
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=GqE543kJ_7Lv1DhlMeZaaf1e0W--H53JK9LEMd_QWeRJnZmEGXOuZmN_0pghU_XeGyxydTqDoCgl4gWRO7kycAoRf9mn9eP8JTfgdP6QNsUsBJC71DPzFkIwtthXACgIEotHHDgCKfGmCdf42kUH3kSBNQrORBYMxNziq3UBaeocFHnwSw17EfvPWZd9LzywaGKQaomiuv3h6Cd2rANkCRa6ZjdpaupydUVo1M6bS185XtUluAQbcIGnp18kaFDdFHv0vRxJlVoXMlFmfustS90Np_1evZ_OxDP_Be6rEijv3E9u5Lh86NYSQZOhETfMQEFVoEKFAdlHIxIa2jj-SsbyK5yULD_WuwEuDk7n_udm4dVp5gMtQAZTD0kExa0pnKzQclzmHF5BXbJ3soRT5YZSWR-e_c9qtuCIvWwFpVFESQW4Vbl_3lThnSsoDf8dMwOOU-wSFzTRcnaIuiexE3ppRq7F3Tabel80hB9QDYVVyZbB10xCjaHG7oj0LxfA9vmNYziFoTOwVno6HdoVNmlKI6xN7wmtZFP7tnP1BxeAi0pC84psR9EtJox-PgWjwllYlBDwMntBv1KKu5FT9BIonoElAy2SE141GBiF5aqDBYr_k5mgKCRrGNRXfN5SFhjWt6UUD7AJXdmgkgJTag" charset="UTF-8"></script><style>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=3-ce5Rs0cUkwX9G5JIwYiR4EDJg7F5sjPbyt5uj_SzLAabaB8GqXxdzRkkGsSigA17b7x_okeAjVCEzdPEgmyqKSVeQHUEjXF3q9ISH5kpJQ-oMU7sUXnNiig6G1lfYjV2izhL5AsWKjb5x4ePU1m2AEHeISjXnCTZGG4nlUA8SQCWXeGuUD-ztzZzero_A8_XAjFLTXQPWgA2k4IIaZBlBIYKNWzgdKU5h9LKMx44eJcX_C3F8tAwOdriNgzWGw01o2SL9dIl9rAF8RZ-BEs7pwR6kU_Dq_EYje1GpBS_OHlhw5qgJsplZ0H7NT3yexLyD5d45Ou57ps8ruWgxoN2isqbRGDUNSqIB_Rc1x-nmoZja06O4ueG2EUEpqhrjnkV19hlYkqKAV-6D-3uk7Zi6cWALEsBskBC6qhuRnjzPgIamIfXTmru9s3q7SQQ7liDBbcBjqNzth12XjIJsABqHNtGIhEh-dxv9LOBUVAuPmg17HgYI3aupEoH0XmvTPAv_yyOD4BF5eWpwoZFhOybroiFFaEhirPT4YrqpczvPO0qIR1FJ7CIAm1Ccf9yvaYBzXnbM8PQoVAaK83ptjn10GQ9BvzmHZWm7EeADHZkA6J8qUBFEDfaFsGH74oX3LiWyE4Pzt1wh6mrjUv2cgrw" charset="UTF-8"></script><style>
 :root {
   --primary: #6b0f1a;
   --red: #c41e3a;
@@ -737,12 +736,6 @@ a.partner-card:hover::after { opacity: 1; }
   color: var(--dark);
 }
 
-
-@media (prefers-reduced-motion: reduce) {
-  .fade-in { transition: none !important; }
-  .stat-card, .partner-card, .part-card { transition: none !important; }
-}
-
 </style>
 </head>
 <body>
@@ -917,14 +910,17 @@ a.partner-card:hover::after { opacity: 1; }
     <p>Видео, фото, эмоции</p>
   </div>
   <div class="media-grid fade-in">
-    <div class="media-video" style="padding:0;min-height:0;">
+    <div class="media-video" style="padding:0;aspect-ratio:16/9;min-height:400px;">
       <!-- ВСТАВЬ СЮДА КОД ВИДЕО ИЗ VK: скопируй src из VK → "Поделиться" → "Экспортировать" -->
       <iframe src="https://vk.com/video_ext.php?oid=152773866&id=456239174&hash=a5efccfbb172c245"
-        style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:16px;" 
+        style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:16px;z-index:2;" 
         allowfullscreen></iframe>
     </div>
-    <div class="media-gallery" id="atmosphere-gallery">
-      <!-- Фото подгружаются автоматически из media/photos/manifest.json -->
+    <div class="media-gallery">
+      <div class="media-photo gallery-item-click" style="padding:0;overflow:hidden;"><img src="media/photos/award.jpg" alt="Награждение" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async" onerror="this.style.display='none';this.parentNode.innerHTML='🖼️<br>Фото с<br>награждения';"></div>
+      <div class="media-photo gallery-item-click" style="padding:0;overflow:hidden;"><img src="media/photos/fight.jpg" alt="Поединки" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async" onerror="this.style.display='none';this.parentNode.innerHTML='🖼️<br>Фото с<br>поединков';"></div>
+      <div class="media-photo gallery-item-click" style="padding:0;overflow:hidden;"><img src="media/photos/veterans_gallery.jpg" alt="Ветераны" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async" onerror="this.style.display='none';this.parentNode.innerHTML='🖼️<br>Фото<br>ветеранов';"></div>
+      <div class="media-photo gallery-item-click" style="padding:0;overflow:hidden;"><img src="media/photos/audience.jpg" alt="Зрители" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async" onerror="this.style.display='none';this.parentNode.innerHTML='🖼️<br>Фото<br>зрителей';"></div>
     </div>
   </div>
 
@@ -1040,7 +1036,7 @@ a.partner-card:hover::after { opacity: 1; }
     </p>
   </div>
   <div class="fade-in" style="background:var(--white); border-radius:20px; padding:30px; box-shadow:var(--shadow); margin-bottom:30px;">
-    <img src="media/banners/sponsors_2026.png" alt="Баннер партнёров loading="lazy" decoding="async" Кубок Мужества 2026" style="width:100%; border-radius:12px; display:block;">
+    <img src="media/banners/sponsors_2026.png" alt="Баннер партнёров Кубок Мужества 2026" style="width:100%; border-radius:12px; display:block;">
   </div>
   <div class="partners-grid fade-in">
     <!-- ЗАМЕНИ: вставь реальные ссылки на сайты партнёров в href -->
@@ -1106,7 +1102,7 @@ a.partner-card:hover::after { opacity: 1; }
       </div>
     </div>
     <div class="qr-placeholder">
-      <img src="media/qr/telegram.png" alt="QR-код Telegram" loading="lazy" decoding="async" style="width:180px;height:180px;border-radius:12px;object-fit:contain;" onerror="this.style.display='none';this.parentNode.querySelector('.qr-box').style.display='flex';">
+      <img src="media/qr/telegram.png" alt="QR-код Telegram" style="width:180px;height:180px;border-radius:12px;object-fit:contain;" onerror="this.style.display='none';this.parentNode.querySelector('.qr-box').style.display='flex';">
       <div class="qr-box" style="display:none;">QR</div>
       <p><strong>QR-код Telegram-канала</strong><br>Подпишитесь на новости турнира</p>
       <p style="font-size:0.85rem; color:#888;">Отсканируйте, чтобы подписаться<br>и следить за новостями</p>
@@ -1171,65 +1167,6 @@ let currentPhotoIndex = 0;
 let galleryPhotos = [];
 
 
-// Auto-load photos from manifest.json
-async function loadPhotoManifest() {
-  try {
-    const response = await fetch('media/photos/manifest.json?t=' + Date.now());
-    const files = await response.json();
-
-    // Галерея "Атмосфера турнира" — всё кроме about.jpg, veterans.jpg, partner_*
-    const atmosFiles = files.filter(f =>
-      !f.startsWith('partner_') &&
-      f !== 'about.jpg' &&
-      f !== 'veterans.jpg'
-    );
-
-    const atmosGallery = document.getElementById('atmosphere-gallery');
-    if (atmosGallery && atmosFiles.length > 0) {
-      atmosGallery.innerHTML = '';
-      atmosFiles.forEach(file => {
-        const div = document.createElement('div');
-        div.className = 'media-photo gallery-item-click';
-        div.style.cssText = 'padding:0;overflow:hidden;';
-        div.innerHTML = `<img src="media/photos/${file}" alt="${file.replace(/\.[^.]+$/, '')}" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='🖼️';">`;
-        atmosGallery.appendChild(div);
-      });
-    }
-
-    // Галерея "Наградная продукция от партнёров" — только partner_*
-    const partnerFiles = files.filter(f => f.startsWith('partner_'));
-
-    const partnersGallery = document.getElementById('partners-gallery');
-    if (partnersGallery && partnerFiles.length > 0) {
-      partnersGallery.innerHTML = '';
-      partnerFiles.forEach((file, index) => {
-        const div = document.createElement('div');
-        div.className = 'partner-gallery-item';
-        div.innerHTML = `<img src="media/photos/${file}" alt="Наградная продукция ${index + 1}" onerror="this.style.display='none';this.parentNode.innerHTML='🖼️<br>Фото ${index + 1}';">`;
-        partnersGallery.appendChild(div);
-      });
-    }
-
-  } catch (e) {
-    console.log('Manifest not found, using fallback photos');
-  }
-
-  // В любом случае инициализируем lightbox (и для статичных, и для динамических фото)
-  initGallery();
-}
-
-function loadVKVideo(container) {
-  const iframe = document.getElementById('vk-video-frame');
-  const placeholder = document.getElementById('vk-video-placeholder');
-  if (iframe && iframe.dataset.src) {
-    iframe.src = iframe.dataset.src;
-    iframe.style.display = 'block';
-    if (placeholder) placeholder.style.display = 'none';
-    container.style.cursor = 'default';
-    container.onclick = null;
-  }
-}
-
 function initGallery() {
   const photos = document.querySelectorAll('.media-photo img, .gallery-item-click img');
   galleryPhotos = Array.from(photos).filter(img => img.src && !img.src.includes('placeholder'));
@@ -1282,7 +1219,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Init after load
-window.addEventListener('load', loadPhotoManifest);
+window.addEventListener('load', initGallery);
 
 </script>
 
