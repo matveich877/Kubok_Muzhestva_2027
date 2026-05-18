@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Кубок Мужества 2026 — Итоги и партнёрство</title>
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=bBpDoLT0LJYfFDejY34qpx0hlU7oi2pZt7EVDPgG5O6Sqw9TgBVJWcpfySycEqR2ZEMgZYJG8UhEz5DvuI0RYr_Sb3hXaHePZyOeH39S_xs_E_YPjajp8mkCbUMGcWCEUFyLaReEbUbPeAKf2tOc9qXabumpYGuIPyvP2_uBaFCvzdB461F8uYgfyMU8P-IHMXvJ1egpfg-EfY5fHDhP0y0yjOrMReZhl_4uZk25dyyysIPXSGbKBtfn9xE6tiPMxDQLcNX8JKB0sZQ579vOcRDOOYj4kgGwzBbVOchLv992M4_nIpWGvD-kPMVrqWAGbaUCAmzbV-OHwnI3W_Na3_ZdJrtYCQrEVLzteiOMNVYAF-8M0bM9tg6yQa471x73x7iA7Msz5zUAaCmnmy8CO-RNHMsotqGLUgqH8EYc0QELhtef7tvsKlzV9AK4fKhwtbvei1m0rCpYwzJ0YFrgIyZPgRFu1UX5MuWr_oYBC5kyOn0kJyHNatr0OvLk4OwuC6YaN0YHIP8XA8ved-LSHylwavXj0ZH2xTkn2I67rJnIMrlzm1YMSl6wmEMYzj57ZG9qil-8xyBpy171NDfwdFmcNUwf46kAAk9lP4XJyCcWbjH8yaJtzbILz_mlMerDmhpwOmRvATaVmJZA3t1ARg" charset="UTF-8"></script><style>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=jw3XWTlApWTLD8fY8d9TPkVarEX-nNIv26TGsSVXNN7YeBacX8NhKAyBov_ky84gGRErRB1Oh5l3W-NTQK4LRAFAPV5qEdQvBxqKZfK0HTRvz5bu5NMelYTy0MvWrXfNhfn-9qx8Q_h93uNhMZwz_QcHubLFlNKV0quDF3bGPR6UNKgWoyl2eM3kdpSZSayLwOFldTwJR6XVS1Fw9fKXGw9VI2Z09HLFsA_aBPo-O_9JJPdO3qjRS8MRJRqfYmxoSIn_0Oxluh1nn7zngypZtTsg6aEBha4sDBGudVuwOA3Tv7Ab__pD_LUvFYhoJuc4DQK1DCgGJpRI3a4qJqV89XoCIkC_HSGT9XS8fAP38ho4zN5gmXMJOw_b0RgFxB3HVi5KttFaGtLF9ZR496VuxgkmvFdrU9mJaMoA1wOjABGoqJrkXi3E3yMJ1SL7f8_qczgpSsy9ADRL74H22M11lQKblOKQWFhth_o5NRmUnNI7eIvcSoq-XRWLFO99EmZANva4-8N46BwyuD7pM5o0vkV2NwnU1xs1ktmyqV8JRdv3tEKBZQEFMkSmoXW7gvzPmqDy23-kMWQHi2Up5FUzuYvnv4WsYprgkYbEZ5d02e3yS6azbj0JJeVV_65C7AW9r2RNZCaoaXZDj88jY_1yGQ" charset="UTF-8"></script><style>
 :root {
   --primary: #6b0f1a;
   --red: #c41e3a;
@@ -916,11 +916,8 @@ a.partner-card:hover::after { opacity: 1; }
         style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:16px;" 
         allowfullscreen></iframe>
     </div>
-    <div class="media-gallery">
-      <div class="media-photo gallery-item-click" style="padding:0;overflow:hidden;"><img src="media/photos/award.jpg" alt="Награждение" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='🖼️<br>Фото с<br>награждения';"></div>
-      <div class="media-photo gallery-item-click" style="padding:0;overflow:hidden;"><img src="media/photos/fight.jpg" alt="Поединки" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='🖼️<br>Фото с<br>поединков';"></div>
-      <div class="media-photo gallery-item-click" style="padding:0;overflow:hidden;"><img src="media/photos/veterans_gallery.jpg" alt="Ветераны" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='🖼️<br>Фото<br>ветеранов';"></div>
-      <div class="media-photo gallery-item-click" style="padding:0;overflow:hidden;"><img src="media/photos/audience.jpg" alt="Зрители" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='🖼️<br>Фото<br>зрителей';"></div>
+    <div class="media-gallery" id="atmosphere-gallery">
+      <!-- Фото подгружаются автоматически из media/photos/manifest.json -->
     </div>
   </div>
 
@@ -1166,6 +1163,54 @@ statsObserver.observe(statsSection);
 let currentPhotoIndex = 0;
 let galleryPhotos = [];
 
+
+// Auto-load photos from manifest.json
+async function loadPhotoManifest() {
+  try {
+    const response = await fetch('media/photos/manifest.json?t=' + Date.now());
+    const files = await response.json();
+
+    // Галерея "Атмосфера турнира" — всё кроме about.jpg, veterans.jpg, partner_*
+    const atmosFiles = files.filter(f =>
+      !f.startsWith('partner_') &&
+      f !== 'about.jpg' &&
+      f !== 'veterans.jpg'
+    );
+
+    const atmosGallery = document.getElementById('atmosphere-gallery');
+    if (atmosGallery && atmosFiles.length > 0) {
+      atmosGallery.innerHTML = '';
+      atmosFiles.forEach(file => {
+        const div = document.createElement('div');
+        div.className = 'media-photo gallery-item-click';
+        div.style.cssText = 'padding:0;overflow:hidden;';
+        div.innerHTML = `<img src="media/photos/${file}" alt="${file.replace(/\.[^.]+$/, '')}" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='🖼️';">`;
+        atmosGallery.appendChild(div);
+      });
+    }
+
+    // Галерея "Наградная продукция от партнёров" — только partner_*
+    const partnerFiles = files.filter(f => f.startsWith('partner_'));
+
+    const partnersGallery = document.getElementById('partners-gallery');
+    if (partnersGallery && partnerFiles.length > 0) {
+      partnersGallery.innerHTML = '';
+      partnerFiles.forEach((file, index) => {
+        const div = document.createElement('div');
+        div.className = 'partner-gallery-item';
+        div.innerHTML = `<img src="media/photos/${file}" alt="Наградная продукция ${index + 1}" onerror="this.style.display='none';this.parentNode.innerHTML='🖼️<br>Фото ${index + 1}';">`;
+        partnersGallery.appendChild(div);
+      });
+    }
+
+  } catch (e) {
+    console.log('Manifest not found, using fallback photos');
+  }
+
+  // В любом случае инициализируем lightbox (и для статичных, и для динамических фото)
+  initGallery();
+}
+
 function initGallery() {
   const photos = document.querySelectorAll('.media-photo img, .gallery-item-click img');
   galleryPhotos = Array.from(photos).filter(img => img.src && !img.src.includes('placeholder'));
@@ -1218,7 +1263,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Init after load
-window.addEventListener('load', initGallery);
+window.addEventListener('load', loadPhotoManifest);
 
 </script>
 
