@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кубок Мужества 2026 — Итоги и партнёрство</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=jw3XWTlApWTLD8fY8d9TPkVarEX-nNIv26TGsSVXNN7YeBacX8NhKAyBov_ky84gGRErRB1Oh5l3W-NTQK4LRAFAPV5qEdQvBxqKZfK0HTRvz5bu5NMelYTy0MvWrXfNhfn-9qx8Q_h93uNhMZwz_QcHubLFlNKV0quDF3bGPR6UNKgWoyl2eM3kdpSZSayLwOFldTwJR6XVS1Fw9fKXGw9VI2Z09HLFsA_aBPo-O_9JJPdO3qjRS8MRJRqfYmxoSIn_0Oxluh1nn7zngypZtTsg6aEBha4sDBGudVuwOA3Tv7Ab__pD_LUvFYhoJuc4DQK1DCgGJpRI3a4qJqV89XoCIkC_HSGT9XS8fAP38ho4zN5gmXMJOw_b0RgFxB3HVi5KttFaGtLF9ZR496VuxgkmvFdrU9mJaMoA1wOjABGoqJrkXi3E3yMJ1SL7f8_qczgpSsy9ADRL74H22M11lQKblOKQWFhth_o5NRmUnNI7eIvcSoq-XRWLFO99EmZANva4-8N46BwyuD7pM5o0vkV2NwnU1xs1ktmyqV8JRdv3tEKBZQEFMkSmoXW7gvzPmqDy23-kMWQHi2Up5FUzuYvnv4WsYprgkYbEZ5d02e3yS6azbj0JJeVV_65C7AW9r2RNZCaoaXZDj88jY_1yGQ" charset="UTF-8"></script><style>
+:root {
+  --primary: #6b0f1a;
+  --red: #c41e3a;
+  --gold: #d4af37;
+  --dark: #1a0a0f;
+  --light: #f8f5f5;
+  --white: #ffffff;
+  --text: #333333;
+  --shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--light);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 50%, #2a5a9e 100%);
+  color: var(--white);
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%230f1b2e" width="1200" height="600"/><path fill="%23c41e3a" opacity="0.1" d="M0 300L50 325L100 300L150 275L200 300L250 325L300 300L350 275L400 300L450 325L500 300L550 275L600 300L650 325L700 300L750 275L800 300L850 325L900 300L950 275L1000 300L1050 325L1100 300L1150 275L1200 300V600H0V300Z"/></svg>');
+  background-size: cover;
+  opacity: 0.3;
+}
+.hero-badge {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: rgba(212,175,55,0.15);
+  border: 1px solid var(--gold);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.hero-content { position: relative; z-index: 2; max-width: 900px; padding: 20px; }
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  line-height: 1.1;
+}
+.hero-sub {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 300;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+.hero-date {
+  display: inline-block;
+  background: var(--red);
+  color: var(--white);
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(196,30,58,0.4);
+}
+.hero-location {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+.hero-cta {
+  display: inline-flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn {
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+}
+.btn-gold {
+  background: var(--gold);
+  color: var(--dark);
+  box-shadow: 0 4px 15px rgba(212,175,55,0.4);
+}
+.btn-gold:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(212,175,55,0.5); }
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+.btn-outline:hover { background: var(--white); color: var(--dark); }
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-title h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--primary);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.section-title .line {
+  width: 80px;
+  height: 4px;
+  background: var(--gold);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+.section-title p {
+  max-width: 700px;
+  margin: 20px auto 0;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* ===== STATS ===== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.stat-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s;
+  border-top: 4px solid var(--gold);
+}
+.stat-card:hover { transform: translateY(-8px); }
+.stat-number {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.stat-label {
+  font-size: 0.95rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.stat-note {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 5px;
+}
+
+/* ===== ABOUT ===== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.about-text h3 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.about-text p { margin-bottom: 15px; font-size: 1.05rem; color: #555; }
+.about-quote {
+  border-left: 4px solid var(--gold);
+  padding-left: 20px;
+  margin: 25px 0;
+  font-style: italic;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+.about-img {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  min-height: 350px;
+  background: linear-gradient(135deg, var(--primary), var(--dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+}
+.about-img-placeholder {
+  opacity: 0.8;
+}
+
+/* ===== GEOGRAPHY ===== */
+.geo-section { background: var(--white); border-radius: 24px; padding: 60px; box-shadow: var(--shadow); }
+.geo-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.geo-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  background: var(--light);
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+.geo-item:hover { background: #e8ecf1; transform: translateX(5px); }
+.geo-flag {
+  width: 40px; height: 40px;
+  background: linear-gradient(135deg, var(--primary), var(--red));
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--white); font-weight: 700; font-size: 0.8rem;
+  flex-shrink: 0;
+}
+.geo-name { font-weight: 600; color: var(--dark); flex: 1; }
+.geo-count {
+  background: var(--primary);
+  color: var(--white);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* ===== VETERANS ===== */
+.veterans {
+  background: linear-gradient(135deg, var(--dark) 0%, #1e2a3a 100%);
+  color: var(--white);
+  border-radius: 24px;
+  padding: 60px;
+  position: relative;
+  overflow: hidden;
+}
+.veterans::before {
+  content: '';
+  position: absolute;
+  top: -50px; right: -50px;
+  width: 200px; height: 200px;
+  background: var(--gold);
+  opacity: 0.1;
+  border-radius: 50%;
+}
+.veterans-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.veterans h2 { color: var(--gold); font-size: 2.2rem; margin-bottom: 20px; }
+.veterans p { opacity: 0.9; margin-bottom: 15px; font-size: 1.05rem; }
+.veterans-stats {
+  display: flex;
+  gap: 30px;
+  margin: 25px 0;
+}
+.vet-stat { text-align: center; }
+.vet-stat-number { font-size: 2.5rem; font-weight: 900; color: var(--gold); }
+.vet-stat-label { font-size: 0.85rem; opacity: 0.8; text-transform: uppercase; }
+.veterans-img {
+  background: rgba(255,255,255,0.05);
+  border: 2px dashed var(--gold);
+  border-radius: 16px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: var(--gold);
+  font-size: 1.1rem;
+}
+
+/* ===== MEDALS ===== */
+.medals-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.medal-table {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+.medal-table h3 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.medal-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.medal-rank {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.8rem; color: var(--white);
+  flex-shrink: 0;
+}
+.rank-1 { background: linear-gradient(135deg, #ffd700, #ffaa00); }
+.rank-2 { background: linear-gradient(135deg, #c0c0c0, #a0a0a0); }
+.rank-3 { background: linear-gradient(135deg, #cd7f32, #b87333); }
+.rank-other { background: var(--primary); }
+.medal-name { flex: 1; font-weight: 600; font-size: 0.95rem; }
+.medal-total { font-weight: 700; color: var(--primary); }
+
+/* ===== JUDGES ===== */
+.judges-highlight {
+  background: linear-gradient(135deg, var(--primary), var(--dark));
+  color: var(--white);
+  border-radius: 24px;
+  padding: 60px;
+  text-align: center;
+}
+.judges-highlight h2 { color: var(--gold); font-size: 2rem; margin-bottom: 15px; }
+.judges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+.judge-region {
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+.judge-region-count { font-size: 2rem; font-weight: 900; color: var(--gold); }
+.judge-region-name { font-size: 0.9rem; opacity: 0.9; margin-top: 5px; }
+
+/* ===== PARTNERS ===== */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 25px;
+}
+.partner-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s;
+  font-weight: 600;
+  color: var(--primary);
+  text-align: center;
+  font-size: 0.9rem;
+  border: 2px solid transparent;
+}
+.partner-card:hover { border-color: var(--gold); transform: translateY(-5px); }
+
+/* ===== MEDIA ===== */
+.media-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+.media-video {
+  background: linear-gradient(135deg, var(--dark), var(--primary));
+  border-radius: 16px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.media-video::before {
+  content: '▶';
+  font-size: 4rem;
+  color: var(--gold);
+  opacity: 0.5;
+  position: absolute;
+}
+.media-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.media-photo {
+  background: linear-gradient(135deg, #e0e5ec, #f0f3f7);
+  border-radius: 12px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #889;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ===== NEXT YEAR ===== */
+.next-year {
+  background: linear-gradient(135deg, var(--primary), #3d0a12);
+  color: var(--white);
+  border-radius: 24px;
+  padding: 60px;
+  text-align: center;
+}
+.next-year h2 { font-size: 2.5rem; margin-bottom: 20px; }
+.next-year p { max-width: 700px; margin: 0 auto 30px; font-size: 1.1rem; opacity: 0.95; }
+.next-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+.next-feature {
+  background: rgba(255,255,255,0.15);
+  border-radius: 16px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+}
+.next-feature-icon { font-size: 2.5rem; margin-bottom: 10px; }
+.next-feature h4 { font-size: 1.1rem; margin-bottom: 8px; }
+.next-feature p { font-size: 0.9rem; opacity: 0.9; }
+
+/* ===== PARTNERSHIP ===== */
+.partnership-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+.part-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s;
+  border-top: 5px solid var(--primary);
+}
+.part-card:hover { transform: translateY(-10px); }
+.part-card.gold { border-top-color: var(--gold); }
+.part-card.red { border-top-color: var(--red); }
+.part-card h3 { font-size: 1.4rem; color: var(--primary); margin-bottom: 10px; }
+.part-card .price {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--dark);
+  margin: 15px 0;
+}
+.part-card ul {
+  list-style: none;
+  text-align: left;
+  margin: 20px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+.part-card ul li { padding: 8px 0; border-bottom: 1px solid #eee; padding-left: 25px; position: relative; }
+.part-card ul li::before { content: '✓'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
+
+/* ===== CONTACTS ===== */
+.contacts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.contact-info h3 { font-size: 1.8rem; color: var(--primary); margin-bottom: 25px; }
+.contact-item { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+.contact-icon {
+  width: 50px; height: 50px;
+  background: linear-gradient(135deg, var(--primary), var(--dark));
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold); font-size: 1.3rem; flex-shrink: 0;
+}
+.contact-text a { color: var(--primary); text-decoration: none; font-weight: 600; font-size: 1.1rem; }
+.contact-text a:hover { color: var(--red); }
+.contact-text span { display: block; font-size: 0.85rem; color: #888; margin-top: 2px; }
+.qr-placeholder {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.qr-box {
+  width: 180px; height: 180px;
+  border: 3px dashed var(--primary);
+  border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: linear-gradient(135deg, var(--dark), var(--primary));
+  color: var(--white);
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+.footer p { opacity: 0.7; font-size: 0.9rem; }
+
+/* ===== ANIMATIONS ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== PRINT ===== */
+@media print {
+  .hero { min-height: auto; padding: 60px 20px; page-break-after: always; }
+  .section { page-break-inside: avoid; padding: 40px 20px; }
+  .btn, .hero-cta { display: none; }
+  body { background: white; }
+  .stat-card, .medal-table, .part-card { box-shadow: none; border: 1px solid #ddd; }
+  .veterans, .judges-highlight, .next-year { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .about-grid, .veterans-grid, .medals-grid, .contacts-grid, .media-grid { grid-template-columns: 1fr; }
+  .geo-section, .veterans, .judges-highlight, .next-year { padding: 30px; border-radius: 16px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-badge { display: none; }
+}
+
+/* ===== LIGHTBOX ===== */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+.lightbox.active { display: flex; }
+.lightbox img {
+  max-width: 90vw;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.lightbox-caption {
+  color: var(--white);
+  margin-top: 15px;
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0.9;
+}
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: var(--white);
+  font-size: 2.5rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  line-height: 1;
+}
+.lightbox-close:hover { opacity: 1; }
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--white);
+  font-size: 3rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  padding: 0 20px;
+  user-select: none;
+}
+.lightbox-nav:hover { opacity: 1; }
+.lightbox-prev { left: 10px; }
+.lightbox-next { right: 10px; }
+.gallery-item-click {
+  cursor: pointer;
+  position: relative;
+}
+.gallery-item-click::after {
+  content: '🔍';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background: rgba(0,0,0,0.4);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-item-click:hover::after { opacity: 1; }
+
+/* ===== YANDEX DISK LINK ===== */
+.yandex-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  color: var(--white);
+  padding: 20px 30px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: var(--shadow);
+}
+.yandex-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+.yandex-link-icon { font-size: 1.8rem; }
+.yandex-link small {
+  display: block;
+  font-weight: 400;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+
+/* ===== PARTNER LINKS ===== */
+a.partner-card {
+  text-decoration: none;
+  color: var(--primary);
+  position: relative;
+}
+a.partner-card::after {
+  content: '↗';
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: var(--gold);
+}
+a.partner-card:hover::after { opacity: 1; }
+
+/* ===== VK PLAYLIST ===== */
+.vk-playlist {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  color: var(--white);
+  margin-top: 30px;
+  box-shadow: var(--shadow);
+}
+.vk-playlist-icon { font-size: 2.5rem; margin-bottom: 10px; }
+.vk-playlist h4 { font-size: 1.2rem; margin-bottom: 8px; color: var(--gold); }
+.vk-playlist p { opacity: 0.85; margin-bottom: 15px; font-size: 0.95rem; }
+.vk-playlist .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gold);
+  color: var(--dark);
+}
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">Февраль 2026 · Новокузнецк</div>
+  <div style="position:absolute; bottom:0; left:0; right:0; height:6px; background: repeating-linear-gradient(45deg, #000 0px, #000 10px, #ffcc00 10px, #ffcc00 20px, #000 20px, #000 30px, #ffcc00 30px, #ffcc00 40px); opacity:0.8;"></div>
+  <div class="hero-content">
+    <div class="hero-date">7–8 ФЕВРАЛЯ 2026</div>
+    <h1>«Кубок Мужества»</h1>
+    <p class="hero-sub">Межрегиональные соревнования по каратэ,<br>посвящённые воинскому братству г. Новокузнецка</p>
+    <p class="hero-location">📍 Выставочный комплекс «Кузбасская ярмарка»</p>
+    <div class="hero-cta">
+      <a href="#stats" class="btn btn-gold">Смотреть итоги</a>
+      <a href="#partnership" class="btn btn-outline">Стать партнёром</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section" id="stats">
+  <div class="section-title fade-in">
+    <h2>Масштаб турнира в цифрах</h2>
+    <div class="line"></div>
+    <p>Результаты, которые говорят сами за себя</p>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-card fade-in">
+      <div class="stat-number" data-target="980">0</div>
+      <div class="stat-label">Участников</div>
+      <div class="stat-note">всех возрастов и уровней</div>
+    </div>
+    <div class="stat-card fade-in">
+      <div class="stat-number" data-target="12">0</div>
+      <div class="stat-label">Регионов России</div>
+      <div class="stat-note">от Тывы до Челябинска</div>
+    </div>
+    <div class="stat-card fade-in">
+      <div class="stat-number" data-target="54">0</div>
+      <div class="stat-label">Судьи</div>
+      <div class="stat-note">СМК, СВК, 1К, 2К, 3К категории</div>
+    </div>
+    <div class="stat-card fade-in">
+      <div class="stat-number" data-target="38">0</div>
+      <div class="stat-label">Спортивных клубов</div>
+      <div class="stat-note">представлены на татами</div>
+    </div>
+    <div class="stat-card fade-in">
+      <div class="stat-number" data-target="42">0</div>
+      <div class="stat-label">Ветерана каратэ</div>
+      <div class="stat-note">первый «Кубок Мастеров»</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <div class="about-grid">
+    <div class="about-text fade-in">
+      <h3>Турнир с именем и историей</h3>
+      <p>«Кубок Мужества» — это не просто соревнования. Это дань памяти тренеру Ходыкину Алексею Васильевичу и его брату Александру, погибшим в ходе специальной военной операции в 2024 году.</p>
+      <p>Алексей Васильевич с 1994 года воспитал 20 мастеров спорта России и более 50 кандидатов в мастера спорта. Его дело продолжается.</p>
+      <div class="about-quote">
+        «Этот турнир — не просто спортивное событие, а важная часть нашей общей истории. Мы верим, что вместе создадим атмосферу единства и уважения.»
+      </div>
+      <p><strong>Матвеев Кирилл Олегович</strong><br><span style="color:#888">Президент Федерации каратэ г. Новокузнецка</span></p>
+    </div>
+    <div class="about-img fade-in">
+      <img src="media/photos/about.jpg" alt="Кубок Мужества 2026" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.parentNode.innerHTML='<div style=\'padding:20px;text-align:center;opacity:0.7;\'>🖼️<br>Загрузите фото в media/photos/about.jpg</div>';">
+    </div>
+  </div>
+</section>
+
+<!-- GEOGRAPHY -->
+<section class="section" style="background:var(--light); border-radius:24px; margin: 0 20px; border:1px solid rgba(107,15,26,0.1);">
+  <div class="section-title fade-in">
+    <h2>География участников</h2>
+    <div class="line"></div>
+    <p>12 регионов — одна площадка. Кузбасс объединяет.</p>
+  </div>
+  <div class="geo-section fade-in">
+    <div class="geo-list">
+      <div class="geo-item"><div class="geo-flag"></div><div class="geo-name">Кемеровская область</div><div class="geo-count">346 уч.</div></div>
+      <div class="geo-item"><div class="geo-flag"></div><div class="geo-name">Алтайский край</div><div class="geo-count">186 уч.</div></div>
+      <div class="geo-item"><div class="geo-flag"></div><div class="geo-name">Новосибирская область</div><div class="geo-count">139 уч.</div></div>
+      <div class="geo-item"><div class="geo-flag"></div><div class="geo-name">Омская область</div><div class="geo-count">127 уч.</div></div>
+      <div class="geo-item"><div class="geo-flag"></div><div class="geo-name">Томская область</div><div class="geo-count">83 уч.</div></div>
+      <div class="geo-item"><div class="geo-flag"></div><div class="geo-name">Республика Тыва</div><div class="geo-count">14 уч.</div></div>
+      <div class="geo-item"><div class="geo-flag"></div><div class="geo-name">Забайкальский край</div><div class="geo-count">13 уч.</div></div>
+      <div class="geo-item"><div class="geo-flag"></div><div class="geo-name">Тюменская область</div><div class="geo-count">17 уч.</div></div>
+      <div class="geo-item"><div class="geo-flag"></div><div class="geo-name">Красноярский край</div><div class="geo-count">39 уч.</div></div>
+      <div class="geo-item"><div class="geo-flag"></div><div class="geo-name">ХМАО-ЮГРА</div><div class="geo-count">9 уч.</div></div>
+      <div class="geo-item"><div class="geo-flag"></div><div class="geo-name">Республика Хакасия</div><div class="geo-count">6 уч.</div></div>
+      <div class="geo-item"><div class="geo-flag"></div><div class="geo-name">Челябинская область</div><div class="geo-count">1 уч.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VETERANS -->
+<section class="section">
+  <div class="veterans fade-in">
+    <div class="veterans-grid">
+      <div>
+        <h2>🏆 Первый «Кубок Мастеров»</h2>
+        <p>Впервые в рамках «Кубка Мужества» прошёл турнир среди ветеранов каратэ. 42 участника из нескольких регионов сразились в категориях от 30 лет и старше. Самому возрастному участнику на момент турнира было 74 года.</p>
+        <p>Дисциплины: <strong>Ката и Кумитэ</strong>. Специальные призовые фонды и памятные награды для каждой возрастной группы.</p>
+        <div class="veterans-stats">
+          <div class="vet-stat"><div class="vet-stat-number">42</div><div class="vet-stat-label">Участника</div></div>
+          <div class="vet-stat"><div class="vet-stat-number">8</div><div class="vet-stat-label">Категорий</div></div>
+          <div class="vet-stat"><div class="vet-stat-number">6+</div><div class="vet-stat-label">Регионов</div></div>
+        </div>
+        <p style="margin-top:20px; font-style:italic; opacity:0.9;">«Редкий шанс вернуться на татами после долгих лет и вновь ощутить радость борьбы, вспомнить былые времена и создать новые воспоминания»</p>
+        <a href="#contacts" class="btn btn-gold" style="margin-top:20px;">Присоединиться в 2027 году</a>
+      </div>
+      <div class="veterans-img">
+        <img src="media/photos/veterans.jpg" alt="Кубок Мастеров" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:16px;" onerror="this.style.display='none';this.parentNode.innerHTML='<div style=\'padding:20px;text-align:center;color:var(--gold);\'>🎬<br>ВСТАВИТЬ ВИДЕО ИНТЕРВЬЮ ВЕТЕРАНОВ<br><small>(или фото с медалью «Кубок Мастеров»)</small></div>';">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEDALS -->
+<section class="section">
+  <div class="section-title fade-in">
+    <h2>Медальный зачёт</h2>
+    <div class="line"></div>
+    <p>Топ-5 регионов и клубов по итогам соревнований</p>
+  </div>
+  <div class="medals-grid fade-in">
+    <div class="medal-table">
+      <h3>🌍 Топ-5 регионов</h3>
+      <div class="medal-row"><div class="medal-rank rank-1">1</div><div class="medal-name">Кемеровская область</div><div class="medal-total">92 медали</div></div>
+      <div class="medal-row"><div class="medal-rank rank-2">2</div><div class="medal-name">Новосибирская область</div><div class="medal-total">75 медалей</div></div>
+      <div class="medal-row"><div class="medal-rank rank-3">3</div><div class="medal-name">Алтайский край</div><div class="medal-total">75 медалей</div></div>
+      <div class="medal-row"><div class="medal-rank rank-other">4</div><div class="medal-name">Омская область</div><div class="medal-total">29 медалей</div></div>
+      <div class="medal-row"><div class="medal-rank rank-other">5</div><div class="medal-name">Томская область</div><div class="medal-total">22 медали</div></div>
+    </div>
+    <div class="medal-table">
+      <h3>🏅 Топ-5 клубов</h3>
+      <div class="medal-row"><div class="medal-rank rank-1">1</div><div class="medal-name">СПК «УСПЕХ» (Новосибирск)</div><div class="medal-total">39</div></div>
+      <div class="medal-row"><div class="medal-rank rank-2">2</div><div class="medal-name">СК «HAJIME» (Новокузнецк)</div><div class="medal-total">38</div></div>
+      <div class="medal-row"><div class="medal-rank rank-3">3</div><div class="medal-name">МАУДО СШ «РУБИН» (Алтай)</div><div class="medal-total">20</div></div>
+      <div class="medal-row"><div class="medal-rank rank-other">4</div><div class="medal-name">СПК «АЛМАЗ» (Новосибирск)</div><div class="medal-total">18</div></div>
+      <div class="medal-row"><div class="medal-rank rank-other">5</div><div class="medal-name">СКК «ПУТЬ ВОИНА» (Новокузнецк)</div><div class="medal-total">15</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- JUDGES -->
+<section class="section">
+  <div class="judges-highlight fade-in">
+    <h2>⚖️ Профессиональный судейский корпус</h2>
+    <p>54 судьи, в том числе судьи международной и всероссийской категории, обеспечили объективность и высочайший уровень соревнований</p>
+    <div class="judges-grid">
+      <div class="judge-region" style="background:rgba(212,175,55,0.25); border:1px solid var(--gold);"><div class="judge-region-count" style="color:var(--gold); font-size:2.4rem;">16</div><div class="judge-region-name">судей<br><span style="font-size:0.75rem; opacity:0.8;">всероссийской категории</span></div></div>
+      <div class="judge-region" style="background:rgba(255,255,255,0.2);"><div class="judge-region-count" style="color:#fff; font-size:2.4rem;">1</div><div class="judge-region-name">судья<br><span style="font-size:0.75rem; opacity:0.8;">международной категории</span></div></div>
+      <div class="judge-region"><div class="judge-region-count">7</div><div class="judge-region-name">судей<br><span style="font-size:0.75rem; opacity:0.8;">первой категории</span></div></div>
+      <div class="judge-region"><div class="judge-region-count">16</div><div class="judge-region-name">судей второй категории</div></div>
+      <div class="judge-region"><div class="judge-region-count">11</div><div class="judge-region-name">судей третьей категории</div></div>
+    </div>
+    <p style="margin-top:30px; opacity:0.9; font-size:1rem;"><strong>24 судьи международной, всероссийской и первой категорий</strong> — гарантия профессионализма на каждом татами</p>
+    <p style="margin-top:10px; opacity:0.8; font-size:0.9rem;">Главный судья — К.О. Матвеев (СВК) · Главный секретарь — Е.В. Макарьев (СВК)</p>
+  </div>
+</section>
+
+<!-- MEDIA -->
+<section class="section">
+  <div class="section-title fade-in">
+    <h2>Атмосфера турнира</h2>
+    <div class="line"></div>
+    <p>Видео, фото, эмоции</p>
+  </div>
+  <div class="media-grid fade-in">
+    <div class="media-video" style="padding:0;min-height:0;">
+      <!-- ВСТАВЬ СЮДА КОД ВИДЕО ИЗ VK: скопируй src из VK → "Поделиться" → "Экспортировать" -->
+      <iframe src="https://vk.com/video_ext.php?oid=152773866&id=456239174&hash=a5efccfbb172c245"
+        style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:16px;" 
+        allowfullscreen></iframe>
+    </div>
+    <div class="media-gallery" id="atmosphere-gallery">
+      <!-- Фото подгружаются автоматически из media/photos/manifest.json -->
+    </div>
+  </div>
+
+    <a href="https://disk.yandex.ru/d/7ylUoCu_IxaeVA" target="_blank" class="yandex-link">
+      <span class="yandex-link-icon">📁</span>
+      <div>
+        Все фотографии с турнира на Яндекс.Диске
+        <small>Загрузите или просмотрите полную галерею</small>
+      </div>
+    </a>
+
+  <!-- VK PLAYLIST -->
+  <div class="vk-playlist fade-in">
+    <div class="vk-playlist-icon">📺</div>
+    <h4>Онлайн-трансляции прошлого турнира</h4>
+    <p>Все поединки «Кубка Мужества 2026» в записи. Прямые эфиры с пяти татами.</p>
+    <!-- ЗАМЕНИ: вставь ссылку на плейлист VK в href -->
+    <a href="https://vkvideo.ru/playlist/-227106154_5" target="_blank" class="btn btn-gold">
+      Смотреть плейлист трансляций VK ↗
+    </a>
+  </div>
+</section>
+
+<!-- NEXT YEAR -->
+<section class="section" id="next-year">
+  <div class="next-year fade-in">
+    <h2>Кубок Мужества 2027</h2>
+    <p>Мы планируем сделать следующий турнир ещё масштабнее. Больше регионов, больше участников, новые дисциплины и расширенная программа для ветеранов.</p>
+    <div class="next-features">
+      <div class="next-feature">
+        <div class="next-feature-icon">📈</div>
+        <h4>Рост на 30%</h4>
+        <p>Цель — 1200+ участников из 15+ регионов</p>
+      </div>
+      <div class="next-feature">
+        <div class="next-feature-icon">🏆</div>
+        <h4>Кубок Мастеров 2.0</h4>
+        <p>Отдельный день, расширенные категории от 30 лет и старше</p>
+      </div>
+      <div class="next-feature">
+        <div class="next-feature-icon">📺</div>
+        <h4>Онлайн-трансляции</h4>
+        <p>Прямые эфиры ключевых поединков на четырех татами</p>
+      </div>
+      <div class="next-feature">
+        <div class="next-feature-icon">🤝</div>
+        <h4>Экспо-зона</h4>
+        <p>Выставка спортивного инвентаря, спортивного питания и экипировки</p>
+      </div>
+    </div>
+    <p style="margin-top:30px; font-style:italic; opacity:0.9;">«Вместе мы делаем эти соревнования настоящим праздником мужества и спортивного братства!»</p>
+  </div>
+</section>
+
+<!-- PARTNERSHIP -->
+<section class="section" id="partnership">
+  <div class="section-title fade-in">
+    <h2>Пакеты партнёрства</h2>
+    <div class="line"></div>
+    <p>Поддержите главное каратэ-событие Сибири и получите максимальную отдачу</p>
+    <p style="max-width:800px; margin:15px auto 0; color:#555; font-size:1rem;">
+      💡 <strong>Помощь может быть не только финансовой.</strong> Мы также приветствуем поддержку в виде наградной продукции, спортивного инвентаря, обеспечения питания, транспорта или других статей расходов — обсудим индивидуальные условия.
+    </p>
+  </div>
+  <div class="partnership-cards fade-in">
+    <div class="part-card red">
+      <h3>Титульный партнёр</h3>
+      <div class="price"></div>
+      <ul>
+        <li>Логотип на главном баннере и всех носителях</li>
+        <li>Название в официальном титуле турнира</li>
+        <li>Отдельный стенд в экспо-зоне</li>
+        <li>Упоминания во всех СМИ и соцсетях</li>
+        <li>Приветствие от имени компании на церемонии</li>
+        <li>10 VIP-пропусков</li>
+      </ul>
+      <a href="#contacts" class="btn btn-gold">Обсудить</a>
+    </div>
+    <div class="part-card gold">
+      <h3>Генеральный партнёр</h3>
+      <div class="price"></div>
+      <ul>
+        <li>Логотип на баннерах и наградной продукции</li>
+        <li>Размещение в Telegram-канале и соцсетях</li>
+        <li>Стенд в зоне регистрации</li>
+        <li>Упоминание в пресс-релизах</li>
+        <li>5 VIP-пропусков</li>
+      </ul>
+      <a href="#contacts" class="btn btn-gold">Обсудить</a>
+    </div>
+    <div class="part-card">
+      <h3>Информационный партнёр</h3>
+      <div class="price"></div>
+      <ul>
+        <li>Логотип на сайте и в программке</li>
+        <li>Публикации в Telegram-канале (2 поста)</li>
+        <li>Упоминание в итоговом видео</li>
+        <li>2 пропуска на церемонию</li>
+      </ul>
+      <a href="#contacts" class="btn btn-gold">Обсудить</a>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS LOGOS -->
+<section class="section">
+  <div class="section-title fade-in">
+    <h2>Наши партнёры в 2026</h2>
+    <div class="line"></div>
+    <p>Компании и организации, которые поддержали «Кубок Мужества»</p>
+    <p style="max-width:600px; margin:15px auto 0; color:#777; font-size:0.95rem;">
+      👆 <strong>Нажмите на карточку</strong>, чтобы перейти на официальный сайт или страницу партнёра
+    </p>
+  </div>
+  <div class="fade-in" style="background:var(--white); border-radius:20px; padding:30px; box-shadow:var(--shadow); margin-bottom:30px;">
+    <img src="media/banners/sponsors_2026.png" alt="Баннер партнёров Кубок Мужества 2026" style="width:100%; border-radius:12px; display:block;">
+  </div>
+  <div class="partners-grid fade-in">
+    <!-- ЗАМЕНИ: вставь реальные ссылки на сайты партнёров в href -->
+    <a href="https://www.ruswkf.ru/" target="_blank" class="partner-card">Федерация каратэ России</a>
+    <a href="https://minsport-kuzbass.ru/" target="_blank" class="partner-card">Минспорт Кузбасса</a>
+    <a href="https://www.wkf42.ru/" target="_blank" class="partner-card">ФК Кемеровской области</a>
+    <a href="#" target="_blank" class="partner-card">ФКН Новокузнецк</a>
+    <a href="https://bestsport.pro/" target="_blank" class="partner-card">Best Sport</a>
+    <a href="#" target="_blank" class="partner-card">ЗИОН</a>
+    <a href="https://rdzm.ru/" target="_blank" class="partner-card">Родная Земля</a>
+    <a href="https://yandex.ru/maps/-/CPsJyRPk" target="_blank" class="partner-card">Аптекарский двор</a>
+    <a href="https://nvkz.klyachka.art/?utm_source=site_direct" target="_blank" class="partner-card">Клячка</a>
+    <a href="https://yandex.ru/maps/-/CPsJy2oT" target="_blank" class="partner-card">Сервис Фарм</a>
+    <a href="https://xn----7sbpb1bdijcdpg3c.xn--p1ai/" target="_blank" class="partner-card">Партнёр центр</a>
+    <a href="https://yandex.ru/maps/-/CPsJyHOj" target="_blank" class="partner-card">ЧОП ГРАД</a>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="section" id="contacts">
+  <div class="section-title fade-in">
+    <h2>Контакты</h2>
+    <div class="line"></div>
+    <p>Готовы обсудить сотрудничество или получить полный спонсорский пакет</p>
+  </div>
+  <div class="contacts-grid fade-in">
+    <div class="contact-info">
+      <h3>Организационный комитет</h3>
+      <div class="contact-item">
+        <div class="contact-icon">👤</div>
+        <div class="contact-text">
+          <a href="#">Матвеев Кирилл Олегович</a>
+          <span>Председатель оргкомитета</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📱</div>
+        <div class="contact-text">
+          <a href="tel:+79996483973">+7 (999) 648-39-73</a>
+          <span>МАКС, Telegram</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-text">
+          <a href="mailto:matveich87@yandex.ru">matveich87@yandex.ru</a>
+          <span>Для спонсорских предложений</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">💬</div>
+        <div class="contact-text">
+          <a href="https://t.me/c/3590341200/8" target="_blank">Telegram-канал турнира</a>
+          <span>Фото, видео, отзывы участников</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div class="contact-text">
+          <a href="#">г. Новокузнецк, Кузбасс</a>
+          <span>Выставочный комплекс «Кузбасская ярмарка»</span>
+        </div>
+      </div>
+    </div>
+    <div class="qr-placeholder">
+      <img src="media/qr/telegram.png" alt="QR-код Telegram" style="width:180px;height:180px;border-radius:12px;object-fit:contain;" onerror="this.style.display='none';this.parentNode.querySelector('.qr-box').style.display='flex';">
+      <div class="qr-box" style="display:none;">QR</div>
+      <p><strong>QR-код Telegram-канала</strong><br>Подпишитесь на новости турнира</p>
+      <p style="font-size:0.85rem; color:#888;">Отсканируйте, чтобы подписаться<br>и следить за новостями</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 Федерация каратэ города Новокузнецка · Межрегиональные соревнования «Кубок Мужества»</p>
+  <p style="margin-top:8px;">Сайт-презентация подготовлен для привлечения партнёров и продвижения следующего турнира</p>
+</footer>
+
+<script>
+// Counter animation
+const counters = document.querySelectorAll('.stat-number');
+const speed = 200;
+
+const runCounters = () => {
+  counters.forEach(counter => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+    const inc = target / speed;
+    if (count < target) {
+      counter.innerText = Math.ceil(count + inc);
+      setTimeout(runCounters, 15);
+    } else {
+      counter.innerText = target;
+    }
+  });
+};
+
+// Intersection Observer for fade-in and counters
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      if (entry.target.querySelector('.stat-number')) {
+        runCounters();
+      }
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Run counters once when stats section is visible
+const statsSection = document.getElementById('stats');
+const statsObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      runCounters();
+      statsObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+statsObserver.observe(statsSection);
+
+
+// Lightbox
+let currentPhotoIndex = 0;
+let galleryPhotos = [];
+
+
+// Auto-load photos from manifest.json
+async function loadPhotoManifest() {
+  try {
+    const response = await fetch('media/photos/manifest.json?t=' + Date.now());
+    const files = await response.json();
+
+    // Галерея "Атмосфера турнира" — всё кроме about.jpg, veterans.jpg, partner_*
+    const atmosFiles = files.filter(f =>
+      !f.startsWith('partner_') &&
+      f !== 'about.jpg' &&
+      f !== 'veterans.jpg'
+    );
+
+    const atmosGallery = document.getElementById('atmosphere-gallery');
+    if (atmosGallery && atmosFiles.length > 0) {
+      atmosGallery.innerHTML = '';
+      atmosFiles.forEach(file => {
+        const div = document.createElement('div');
+        div.className = 'media-photo gallery-item-click';
+        div.style.cssText = 'padding:0;overflow:hidden;';
+        div.innerHTML = `<img src="media/photos/${file}" alt="${file.replace(/\.[^.]+$/, '')}" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentNode.innerHTML='🖼️';">`;
+        atmosGallery.appendChild(div);
+      });
+    }
+
+    // Галерея "Наградная продукция от партнёров" — только partner_*
+    const partnerFiles = files.filter(f => f.startsWith('partner_'));
+
+    const partnersGallery = document.getElementById('partners-gallery');
+    if (partnersGallery && partnerFiles.length > 0) {
+      partnersGallery.innerHTML = '';
+      partnerFiles.forEach((file, index) => {
+        const div = document.createElement('div');
+        div.className = 'partner-gallery-item';
+        div.innerHTML = `<img src="media/photos/${file}" alt="Наградная продукция ${index + 1}" onerror="this.style.display='none';this.parentNode.innerHTML='🖼️<br>Фото ${index + 1}';">`;
+        partnersGallery.appendChild(div);
+      });
+    }
+
+  } catch (e) {
+    console.log('Manifest not found, using fallback photos');
+  }
+
+  // В любом случае инициализируем lightbox (и для статичных, и для динамических фото)
+  initGallery();
+}
+
+function initGallery() {
+  const photos = document.querySelectorAll('.media-photo img, .gallery-item-click img');
+  galleryPhotos = Array.from(photos).filter(img => img.src && !img.src.includes('placeholder'));
+
+  document.querySelectorAll('.media-photo, .gallery-item-click').forEach((item, index) => {
+    item.style.cursor = 'pointer';
+    item.addEventListener('click', () => openLightbox(index));
+  });
+}
+
+function openLightbox(index) {
+  currentPhotoIndex = index;
+  const lightbox = document.getElementById('lightbox');
+  const img = document.getElementById('lightboxImg');
+  const caption = document.getElementById('lightboxCaption');
+
+  if (galleryPhotos[currentPhotoIndex]) {
+    img.src = galleryPhotos[currentPhotoIndex].src;
+    caption.textContent = galleryPhotos[currentPhotoIndex].alt || '';
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeLightbox(e) {
+  if (e.target.id === 'lightbox' || e.target.classList.contains('lightbox-close')) {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
+function changePhoto(dir) {
+  currentPhotoIndex += dir;
+  if (currentPhotoIndex < 0) currentPhotoIndex = galleryPhotos.length - 1;
+  if (currentPhotoIndex >= galleryPhotos.length) currentPhotoIndex = 0;
+
+  const img = document.getElementById('lightboxImg');
+  const caption = document.getElementById('lightboxCaption');
+  img.src = galleryPhotos[currentPhotoIndex].src;
+  caption.textContent = galleryPhotos[currentPhotoIndex].alt || '';
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  const lightbox = document.getElementById('lightbox');
+  if (!lightbox.classList.contains('active')) return;
+  if (e.key === 'Escape') closeLightbox({target: {id: 'lightbox'}});
+  if (e.key === 'ArrowLeft') changePhoto(-1);
+  if (e.key === 'ArrowRight') changePhoto(1);
+});
+
+// Init after load
+window.addEventListener('load', loadPhotoManifest);
+
+</script>
+
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+  <span class="lightbox-nav lightbox-prev" onclick="changePhoto(-1)">&#10094;</span>
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+  <span class="lightbox-nav lightbox-next" onclick="changePhoto(1)">&#10095;</span>
+</div>
+
+</body>
+</html>
